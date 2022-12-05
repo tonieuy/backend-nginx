@@ -1,0 +1,29 @@
+GET http://localhost:2001/users
+
+###
+GET http://localhost:2001/users/7
+
+
+###
+POST  http://localhost:2001/users
+Content-Type: application/json
+
+{
+    "name": "tonny",
+    "email": "tonny@gmail.com",
+    "gender": "male"
+}
+
+###
+PATCH  http://localhost:2001/users/2
+Content-Type: application/json
+
+{
+    "name": "pratama",
+    "email": "pratama@gmail.com",
+    "gender": "male"
+}
+
+
+###
+DELETE http://localhost:2001/users/7
